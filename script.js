@@ -13,6 +13,7 @@ function type() {
     setTimeout(() => {
       document.querySelector(".intro").style.display = "none";
       mainContent.classList.remove("hidden");
+      mainContent.classList.add("fade-in-up"); // Apply a different animation class
     }, 1500); // tempo per leggere sottotitolo
   }
 }
