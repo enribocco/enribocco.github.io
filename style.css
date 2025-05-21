@@ -219,6 +219,13 @@
     color: #1DB954;
   }
   
+  .vinted span{
+    color: #024756;
+  }
+  .vinted img{
+    border-radius: 25%;
+  }
+
   .social-btn:hover {
     transform: scale(1.05);
   }
