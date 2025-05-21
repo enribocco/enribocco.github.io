@@ -84,7 +84,7 @@
     display: inline-block;
     transform-origin: bottom center;
     animation: wave 1.5s infinite;
-    animation-iteration-count: 2; /* 8 seconds / 1.5 seconds per iteration */
+    animation-iteration-count: 5; /* 8 seconds / 1.5 seconds per iteration */
   }
 
  
