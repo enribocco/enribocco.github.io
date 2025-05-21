@@ -20,4 +20,12 @@ function type() {
 
 window.onload = () => {
   setTimeout(type, 300);
+
+  // Stop waving animation after 5 seconds
+  setTimeout(() => {
+    const wavingHand = document.querySelector(".waving-hand");
+    if (wavingHand) {
+      wavingHand.classList.add("no-wave");
+    }
+  }, 5000);
 };

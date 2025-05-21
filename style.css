@@ -72,7 +72,22 @@
       transform: translateX(0);
     }
   }
-  
+
+  @keyframes wave {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-15deg); }
+    50% { transform: rotate(10deg); }
+    75% { transform: rotate(-10deg); }
+  }
+
+  .waving-hand {
+    display: inline-block;
+    transform-origin: bottom center;
+    animation: wave 1.5s infinite;
+    animation-iteration-count: 2; /* 8 seconds / 1.5 seconds per iteration */
+  }
+
+ 
   /* INTRO */
   .intro {
     height: 100vh;
