@@ -87,6 +87,10 @@
     animation-iteration-count: 2; /* 8 seconds / 1.5 seconds per iteration */
   }
 
+  .waving-hand:hover {
+    animation: wave 1.5s infinite;
+  }
+
  
   /* INTRO */
   .intro {

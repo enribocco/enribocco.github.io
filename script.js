@@ -28,4 +28,16 @@ window.onload = () => {
       wavingHand.classList.add("no-wave");
     }
   }, 5000);
+
+  // Restart waving animation on hover
+  const wavingHand = document.querySelector(".waving-hand");
+  if (wavingHand) {
+    wavingHand.addEventListener("mouseover", () => {
+      wavingHand.classList.remove("no-wave");
+      wavingHand.style.animation = "none"; // Reset animation
+      setTimeout(() => {
+        wavingHand.style.animation = ""; // Restart animation
+      }, 0);
+    });
+  }
 };
